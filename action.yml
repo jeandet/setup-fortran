@@ -64,11 +64,14 @@ runs:
 
         which "${FC}"
         which "${CC}"
+        which "${CXX}"
   
         # set outputs
-        echo "fc=${FC}" >> $GITHUB_OUTPUT
-        echo "cc=${CC}" >> $GITHUB_OUTPUT
+        echo "fc=${FC}"   >> $GITHUB_OUTPUT
+        echo "cc=${CC}"   >> $GITHUB_OUTPUT
+        echo "cxx=${CXX}" >> $GITHUB_OUTPUT
         
         # persist environment variables
-        echo "FC=${FC}" >> $GITHUB_ENV
-        echo "CC=${CC}" >> $GITHUB_ENV
+        echo "FC=${FC}"   >> $GITHUB_ENV
+        echo "CC=${CC}"   >> $GITHUB_ENV
+        echo "CXX=${CXX}" >> $GITHUB_ENV

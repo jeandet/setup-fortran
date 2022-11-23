@@ -54,14 +54,15 @@ jobs:
 The action sets the following outputs:
 
 - `cc`: C compiler executable, e.g. `gcc`
+- `cxx`: C++ compiler executable, e.g. `g++`
 - `fc`: Fortran compiler executable, e.g. `gfortran`
-
 
 ## Environment variables
 
 The same values are also set as environment variables:
 
 - `CC`
+- `CXX`
 - `FC`
 
 These are made available to subsequent workflow steps via the [`GITHUB_ENV` environment file mechanism](https://docs.github.com/en/actions/learn-github-actions/environment-variables#passing-values-between-steps-and-jobs-in-a-workflow).
